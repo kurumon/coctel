@@ -1,0 +1,37 @@
+html * {
+  font-size: 16px;
+  font-family: MS PGothic, monospace, sans-serif;
+}
+
+#menu {
+  border: solid 1px black;
+  background-color: #aab9b9;
+  height: 500px;
+  width: 200px;
+}
+
+#menu-header {
+  background-color: #757c7c;
+  border-top: solid 2px white;
+  border-left: solid 2px white;
+  border-bottom: solid 2px black;
+  box-shadow: 0px 1px #757c7c;
+}
+
+#menu-header-box {
+  text-align: center;
+  width: 50px;
+  background-color: #757c7c;
+  margin: 0px auto 0px auto;
+  border-top: solid 1px black;
+  border-left: solid 1px black;
+  border-right: solid 1px #aab9b9;
+  border-bottom: solid 1px #aab9b9;
+  box-shadow: 1px 0px 0px 0px white;
+  position: relative;
+  top: 1px;
+}
+
+p {
+  margin: 0;
+}
