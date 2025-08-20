@@ -3,8 +3,12 @@ html * {
   font-family: MS PGothic, monospace, sans-serif;
   font-weight: normal;
   color: white;
+  scrollbar-width: none; /* Remove scrollbars on Firefox */
 }
-
+/* Remove scrollbars on WebKit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin: 0;
   display: flex;
@@ -13,7 +17,7 @@ body {
   height: 100vh;
   background-color: black;
 }
-
+/*CRT with Divers UI*/
 #frame {
   position: relative;
   width: 742px;
@@ -21,7 +25,7 @@ body {
   background: url("images/frame.png") no-repeat center center;
   background-size: cover;
 }
-
+/*About me sidebar*/
 #sidebar {
   position: absolute;
   width: 130px;
@@ -29,14 +33,12 @@ body {
   top: 82px;
   right: 82px;
 }
-
 #sidebar-avatar {
   position: absolute;
   width: 130px;
   height: 130px;
   background: rgba(0, 255, 128, 0.5);
 }
-
 #sidebar-header {
   position: absolute;
   width: 130px;
@@ -49,7 +51,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 #sidebar-content {
   position: absolute;
   width: 130px;
@@ -65,12 +66,32 @@ body {
   text-align: justify;
   text-align-last: justify;
 }
-
-#test-div {
+/*Main content*/
+#main {
   position: absolute;
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 0, 0, 0.5);
-  top: 50px;
-  left: 100px;
+  width: 418px;
+  height: 274px;
+  top: 74px;
+  left: 66px;
+  overflow-y: scroll;
+}
+/*Posts*/
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+}
+.post-header h1 {
+  margin: 0;
+  color: #fa5692;
+}
+.post-content {
+  padding: 0px 10px;
+}
+.post-content p {
+  margin: 0px;
+  text-align: justify;
+}
+.post-footer {
+  text-align: center;
 }
