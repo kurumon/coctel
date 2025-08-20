@@ -1,6 +1,8 @@
 html * {
   font-size: 16px;
   font-family: MS PGothic, monospace, sans-serif;
+  font-weight: normal;
+  color: white;
 }
 
 body {
@@ -12,7 +14,7 @@ body {
   background-color: black;
 }
 
-.frame {
+#frame {
   position: relative;
   width: 742px;
   height: 577px;
@@ -20,20 +22,55 @@ body {
   background-size: cover;
 }
 
-.test-div {
+#sidebar {
+  position: absolute;
+  width: 130px;
+  height: 234px;
+  top: 82px;
+  right: 82px;
+}
+
+#sidebar-avatar {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background: rgba(0, 255, 128, 0.5);
+}
+
+#sidebar-header {
+  position: absolute;
+  width: 130px;
+  height: 28px;
+  top: 130px;
+  right: 0;
+  background: url("images/sidebar-header.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar-content {
+  position: absolute;
+  width: 130px;
+  height: 76px;
+  top: 158px;
+  right: 0;
+  box-sizing: border-box;
+  padding: 10px 6px;
+}
+#sidebar-content p {
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+#test-div {
   position: absolute;
   width: 80px;
   height: 80px;
   background: rgba(255, 0, 0, 0.5);
   top: 50px;
   left: 100px;
-}
-
-.test-div2 {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background: rgba(0, 0, 255, 0.5);
-  bottom: 40px;
-  right: 80px;
 }
