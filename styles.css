@@ -17,7 +17,7 @@ body {
   height: 100vh;
   background-color: black;
 }
-/*CRT with Divers UI*/
+/* CRT with Divers UI */
 #frame {
   position: relative;
   width: 742px;
@@ -25,7 +25,7 @@ body {
   background: url("images/frame.png") no-repeat center center;
   background-size: cover;
 }
-/*About me sidebar*/
+/* About me sidebar */
 #sidebar {
   position: absolute;
   width: 130px;
@@ -66,7 +66,7 @@ body {
   text-align: justify;
   text-align-last: justify;
 }
-/*Main content*/
+/* Main content */
 #main {
   position: absolute;
   width: 418px;
@@ -75,7 +75,7 @@ body {
   left: 66px;
   overflow-y: scroll;
 }
-/*Posts*/
+/* Posts */
 .post-header {
   display: flex;
   justify-content: space-between;
@@ -95,7 +95,7 @@ body {
 .post-footer {
   text-align: center;
 }
-
+/* Footer */
 #footer {
   position: absolute;
   width: 382px;
@@ -126,4 +126,40 @@ body {
   100% {
     transform: translate(-100%, 0);
   }
+}
+
+/* Navigation panel */
+#navigation {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  bottom: 150px;
+  right: 123px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: relative
+}
+#nav-item-home {
+  background: url("images/home.png") no-repeat center center;
+}
+#nav-item-about {
+  background: url("images/about.png") no-repeat center center;
+}
+#nav-item-links {
+  background: url("images/links.png") no-repeat center center;
+}
+#nav-item-music {
+  background: url("images/music.png") no-repeat center center;
+}
+.nav-item a {
+  position: absolute;
+  inset: 0;           
+  display: block;
 }
