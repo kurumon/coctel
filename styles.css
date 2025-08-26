@@ -16,6 +16,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: black;
+  cursor: url('images/divers_cursor.cur'), auto;
 }
 /* CRT with Divers UI */
 #frame {
@@ -37,7 +38,7 @@ body {
   position: absolute;
   width: 130px;
   height: 130px;
-  background: rgba(0, 255, 128, 0.5);
+  background: url("images/cocktail.png") no-repeat center center;
 }
 #sidebar-header {
   position: absolute;
