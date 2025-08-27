@@ -16,7 +16,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: black;
-  cursor: url('../assets/images/ui/divers_cursor.cur'), auto;
+  cursor: url("../assets/images/ui/divers_cursor.cur"), auto;
 }
 /* CRT with Divers UI */
 #frame {
@@ -175,4 +175,26 @@ body {
   position: absolute;
   inset: 0;
   display: block;
+}
+/*Pages/Links*/
+.links-content-container {
+  margin: 30px auto;
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.links-container {
+  height: 50px;
+  margin: 10px 1em;
+  flex: 0 1 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+.links-container img {
+  max-width: 100%;
+  margin: 0;
 }
