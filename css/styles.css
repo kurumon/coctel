@@ -16,14 +16,14 @@ body {
   align-items: center;
   height: 100vh;
   background-color: black;
-  cursor: url('images/ui/divers_cursor.cur'), auto;
+  cursor: url('../assets/images/ui/divers_cursor.cur'), auto;
 }
 /* CRT with Divers UI */
 #frame {
   position: relative;
   width: 742px;
   height: 577px;
-  background: url("assets/images/ui/frame.png") no-repeat center center;
+  background: url("../assets/images/ui/frame.png") no-repeat center center;
   background-size: cover;
 }
 /* About me sidebar */
@@ -38,7 +38,7 @@ body {
   position: absolute;
   width: 130px;
   height: 130px;
-  background: url("assets/images/ui/cocktail.png") no-repeat center center;
+  background: url("../assets/images/ui/cocktail.png") no-repeat center center;
 }
 #sidebar-header {
   position: absolute;
@@ -46,7 +46,7 @@ body {
   height: 28px;
   top: 130px;
   right: 0;
-  background: url("assets/images/ui/sidebar-header.png") no-repeat center center;
+  background: url("../assets/images/ui/sidebar-header.png") no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -159,16 +159,16 @@ body {
   position: relative;
 }
 #nav-item-home {
-  background: url("assets/images/ui/home.png") no-repeat center center;
+  background: url("../assets/images/ui/home.png") no-repeat center center;
 }
 #nav-item-about {
-  background: url("assets/images/ui/about.png") no-repeat center center;
+  background: url("../assets/images/ui/about.png") no-repeat center center;
 }
 #nav-item-links {
-  background: url("assets/images/ui/links.png") no-repeat center center;
+  background: url("../assets/images/ui/links.png") no-repeat center center;
 }
 #nav-item-music {
-  background: url("assets/images/ui/music.png") no-repeat center center;
+  background: url("../assets/images/ui/music.png") no-repeat center center;
   cursor: pointer;
 }
 .nav-item a {

@@ -25,10 +25,10 @@ var marqueeText = document.getElementById("marquee-text");
 
 function updateMusicInfo() {
   if (audio.paused) {
-    icon.style.background = "url('images/music.png') no-repeat center center";
+    icon.style.background = "url('../assets/images/ui/music.png') no-repeat center center";
     marqueeText.innerHTML = "ψ(｀∇´)ψ DEATH TO LINKEDIN ＼(｀0´)／";
   } else {
-    icon.style.background = "url('images/music-stop.png') no-repeat center center";
+    icon.style.background = "url('../assets/images/ui/music-stop.png') no-repeat center center";
     marqueeText.innerHTML = "♪ Now playing: Ryu Umemoto - Remains ♪";
   }
 }
