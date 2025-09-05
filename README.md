@@ -1,0 +1,1 @@
+This is the repository for my personal Neocities website [coctel](https://coctel.neocities.org/)! It's all simple HTML/CSS/JS so just clone the repo to run locally.
