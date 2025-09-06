@@ -16,7 +16,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: black;
-  cursor: url("../assets/images/ui/divers_cursor.cur"), auto;
+  cursor: url("../assets/images/ui/divers_cursor.png"), auto;
 }
 /* CRT with Divers UI */
 #frame {
