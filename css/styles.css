@@ -59,11 +59,18 @@ body {
   top: 158px;
   right: 0;
   box-sizing: border-box;
-  padding: 10px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
 }
+
 #sidebar-content p {
-  padding: 0;
+  width: 100%;
   margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 1.05;
   text-align: justify;
   text-align-last: justify;
 }
