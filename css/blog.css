@@ -65,10 +65,10 @@ body {
     margin: 0px 100px;
 }
 
-table {
+table,
+.post-table {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
     color: rgb(226, 220, 255);
     border-color: rgb(78, 79, 81) rgb(13, 17, 18) rgb(13, 17, 18) rgb(78, 79, 81);
     border-width: 3px 4px 3px;
@@ -108,6 +108,16 @@ td {
     display: flex;
     flex-direction: column;
     height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(226, 220, 255);
+    border-color: rgb(78, 79, 81) rgb(13, 17, 18) rgb(13, 17, 18) rgb(78, 79, 81);
+    border-width: 3px 4px 3px;
+    border-style: solid;
+    background-color: rgb(37, 37, 39);
+    border-collapse: separate;
+    border-spacing: 4px 3px;
+    margin: 3px; /*this is so the green border shadow can be seen, try to find a better solution */
 }
 
 .post-title {
@@ -128,10 +138,17 @@ td {
     height: 60px;
     box-shadow: -2px -2px 3px rgb(0, 0, 0);
 }
+
 #changelog table {
     width: 500px;
 }
 
-#posts table {
-    width: 600px;
+#posts {
+    position: relative;
+    width: 700px;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-color: rgb(38, 39, 44) rgb(88, 87, 105);
+    scrollbar-width: thin;
+    background-color: rgb(37, 37, 39);
 }
