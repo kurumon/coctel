@@ -16,37 +16,47 @@ body {
 }
 
 #page-title {
-    width: 25%;
-    height: 40px;
+  
+    height: 30px;
     display: flex;
     margin-top: 30px;
 }
 
 #page-title-block-left {
-    width: 25%;
-    height: 100%;
+    width: 60px;
+    height: 24px;
     background-color: rgb(46, 48, 63);
-    border-width: 2px;
+    border-width: 3px;
+    border-color: rgb(100,100,112) rgb(32,31,36) rgb(32,31,36) rgb(100,100,112) ;
+    border-style: solid;
 }
 
 #page-title-block-center {
-    width: 3%;
-    height: 80%;
+    width: 1px;
+    height: 18px;
     background-color: rgb(184, 178, 250);
     position: relative;
-    top: 10%;
-    box-shadow: 0 0 20px magenta;
+    top: 3px;
+    box-shadow: 0 0 21px magenta;
+    border-width: 2px;
+    border-color: rgb(242,234,255) rgb(184, 178, 250) rgb(184, 178, 250) rgb(242,234,255);
+    border-style: solid;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #page-title-block-right {
-    width: 70%;
-    height: 100%;
+    width: 200px;
+    height: 24px;
     background-color: rgb(37, 38, 40);
     display: flex;
     align-items: center;
     border-bottom-right-radius: 20px;
     padding-left: 40px;
     color: rgb(212, 207, 207);
+    border-width: 3px;
+    border-color: rgb(61,60,65) rgb(22,21,26) rgb(22,21,26) rgb(61,60,65) ;
+    border-style: solid;
 }
 
 #content {
