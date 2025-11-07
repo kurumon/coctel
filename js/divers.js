@@ -26,7 +26,7 @@ var marqueeText = document.getElementById("marquee-text");
 function updateMusicInfo() {
   if (audio.paused) {
     icon.style.background = "url('../assets/images/ui/music.png') no-repeat center center";
-    marqueeText.innerHTML = "ψ(｀∇´)ψ DEATH TO LINKEDIN ＼(｀0´)／";
+    marqueeText.innerHTML = "Happy holidays ~~匸Pヽ(･ω･｀)";
   } else {
     icon.style.background = "url('../assets/images/ui/music-stop.png') no-repeat center center";
     marqueeText.innerHTML = "♪ Now playing: Ryu Umemoto - Remains ♪";
@@ -46,8 +46,8 @@ Array.from(elements).forEach((element) => {
       case "nav-item-home":
         marqueeNavInfo.innerHTML = "Return home";
         break;
-      case "nav-item-about":
-        marqueeNavInfo.innerHTML = "More about me";
+      case "nav-item-blog":
+        marqueeNavInfo.innerHTML = "Sometimes I write stuff here";
         break;
       case "nav-item-links":
         marqueeNavInfo.innerHTML = "Other places you can find me";

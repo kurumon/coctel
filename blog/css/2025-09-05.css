@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Perfect DOS VGA 437";
+  src: url("/assets/fonts/Perfect DOS VGA 437.ttf") format("truetype");
+}
+html * {
+  font-family: "Perfect DOS VGA 437", monospace, sans-serif;
+}
+body{
+    background: black;
+    color: orange;
+}
+
+#container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid orange;
+}
+
+#title{
+    color:black;
+    background-color: orange;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+    border: 1px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p{
+    line-height: 1.6;
+    text-align: justify;
+}
+a{
+    color: orange;
+    text-decoration: underline;
+}
