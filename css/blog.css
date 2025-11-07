@@ -204,15 +204,16 @@ a {
     flex-direction: row;
     padding: 5px 0;
     border-bottom: 1px solid rgb(78, 79, 81);
+    justify-items: space-between;
 }
 
 .entry-header {
-    flex: 0 0 80px;
+    flex: 0 0 110px;
     padding: 0 10px;
 }
 
 .entry-description {
-    flex: 0 0 410px;
+    flex: 0 0 390px;
     padding: 0 10px;
 }
 
