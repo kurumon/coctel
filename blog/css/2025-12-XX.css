@@ -2,6 +2,10 @@ html * {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    font-size: small;
+}
+
 #container {
     max-width: 700px;
     margin: auto;
@@ -36,17 +40,38 @@ html * {
     border-top: 1px solid rgb(139, 137, 146);
     padding: 0;
     background: linear-gradient(to bottom, rgb(176, 178, 199), #f9f9f9, #dbdbdb);
-
 }
 
 #left-box {
     background: linear-gradient(to bottom, rgb(132, 207, 112), rgb(226, 240, 207), rgb(95, 168, 78), rgb(7, 107, 35));
-    width: 8%;
+    width: 100px;
     border-right: 1px solid;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
 }
 
 #right-box {
-    width: 92%;
+    display: flex;
+    align-items: center;
+}
+
+#open-program {
+    background: linear-gradient(to bottom, rgb(102, 112, 124), rgb(100, 113, 122), rgb(117, 127, 136), rgb(128, 138, 150));
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(111, 120, 135);
+    color: white;
+    border-radius: 3px;
+    height: 75%;
+    padding: 0px 5px;
+    margin-left: 5px;
 }
