@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "UnifontFullMediumMono";
+  src: url("../assets/fonts/UnifontFullMediumMono.ttf") format("truetype");
+  font-weight: normal;
+}
+
+html * {
+  font-family: "UnifontFullMediumMono", sans-serif;
+  color: white;
+}
+
+/* Remove scrollbars on WebKit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  cursor: url("../assets/images/ui/cursor_doukyuusei.png"), auto;
+}
+
+/* CRT with Doukyuusei UI */
+#frame {
+  position: relative;
+  width: 742px;
+  height: 577px;
+  background: url("../assets/images/ui/frame_doukyuusei.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* Main content */
+main {
+  position: absolute;
+  width: 515px;
+  height: 289px;
+  top: 60px;
+  left: 120px;
+  overflow-y: scroll;
+}
+
+span {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 20px;
+  color: yellow;
+}
+
+/* Links */
+#links-container {
+  margin: 30px auto;
+  padding: 5px;
+  display: flex;
+}
+
+.link {
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  width: 403px;
+  height: 68px;
+  bottom: 135px;
+  left: 169px;
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  position: absolute;
+  left: 120px;
+  display: flex;
+  align-items: center;
+}
