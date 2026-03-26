@@ -26,9 +26,9 @@ var marqueeText = document.getElementById("marquee-text");
 function updateMusicInfo() {
   if (audio.paused) {
     icon.style.background = "url('../assets/images/ui/music.png') no-repeat center center";
-    marqueeText.innerHTML = "Happy holidays ~~匸Pヽ(･ω･｀)";
+    marqueeText.innerHTML = "Select an option from the menu to your right ~~匸Pヽ(･ω･｀)";
   } else {
-    icon.style.background = "url('../assets/images/ui/music-stop.png') no-repeat center center";
+    icon.style.background = "url('../assets/images/ui/music_stop.png') no-repeat center center";
     marqueeText.innerHTML = "♪ Now playing: Ryu Umemoto - Remains ♪";
   }
 }

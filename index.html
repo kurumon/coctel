@@ -1,30 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=742, user-scalable=no" />
     <title>Welcome</title>
     <link rel="icon" type="image/x-icon" href="assets/images/ui/favicon.png" />
-    <link rel="stylesheet" href="css/divers.css" />
+    <link rel="stylesheet" href="css/index_divers.css" />
   </head>
   <body>
     <div id="frame">
-      <!--Main content-->
-      <div id="main">
-        <!--Posts-->
-        <div class="post">
-          <div class="post-header">
-            <h1>About me</h1>
-          </div>
-          <div class="post-content">
-            <p>
-              Hello, I’m nat ☕︎ <br />
-              In the real world I program for a living and in the digital world I program for fun. I love music, movies, anime and videogames, retro
-              and new. If I’m not sitting in front of a computer, I’m either sleeping or enjoying a nice day with my dog.
-            </p>
-          </div>
-        </div>
-      </div>
+      <!--Main-->
+      <main>
+        <h1>About me</h1>
+        <p>
+          Hello, I’m nat ☕︎ <br />
+          In the real world I program for a living and in the digital world I program for fun. I love music, movies, anime and videogames, retro and
+          new. If I’m not sitting in front of a computer, I’m either sleeping or enjoying a nice day with my dog.
+        </p>
+      </main>
 
       <!--Sidebar-->
       <div id="sidebar">
@@ -42,7 +35,7 @@
       </div>
 
       <!--Navigation panel-->
-      <div id="navigation">
+      <nav>
         <div class="nav-item" id="nav-item-home">
           <a href="/index.html"></a>
         </div>
@@ -55,15 +48,15 @@
         <div class="nav-item" id="nav-item-music" onClick="toggleMusic()">
           <audio id="audio" src="https://files.catbox.moe/vi0v7r.mp3" preload="auto"></audio>
         </div>
-      </div>
+      </nav>
 
       <!--Footer-->
-      <div id="footer">
+      <footer>
         <div id="marquee">
-          <p id="marquee-text">Happy holidays ~~匸Pヽ(･ω･｀)</p>
+          <p id="marquee-text">Select an option from the menu to your right ~~匸Pヽ(･ω･｀)</p>
         </div>
         <div id="marquee-nav-info"></div>
-      </div>
+      </footer>
     </div>
   </body>
   <script src="/js/divers.js"></script>
