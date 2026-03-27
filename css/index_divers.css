@@ -109,6 +109,18 @@ main p {
   margin: 0px;
 }
 
+#button {
+  width: 200px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#button span {
+  margin-bottom: 15px;
+}
+
 /* Footer */
 footer {
   position: absolute;

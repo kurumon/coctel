@@ -52,20 +52,31 @@ span {
 
 /* Links */
 #links-container {
-  margin: 30px auto;
+  margin: 10px auto;
   padding: 5px;
   display: flex;
 }
 
 .link {
   height: 50px;
-  margin: 10px;
+  margin: 0px 10px;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   flex-direction: column;
+}
+
+#buttons-container {
+  margin: 10px 15px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#buttons-container img {
+  max-width: 88px;
 }
 
 /* Footer */
