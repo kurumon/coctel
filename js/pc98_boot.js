@@ -1,5 +1,4 @@
-var screen = document.getElementById("boot");
-var ram = document.getElementById("ram");
+const ram = document.getElementById("ram");
 const messages = [
   "256",
   "384",
@@ -13,24 +12,31 @@ const messages = [
   "640KB + 896",
   "640KB + 1024",
 ];
+const images = ["../assets/images/ui/pc98_dos.png", "\'\'"];
 
 function boot() {
-  screen.style.visibility = "visible";
+  setTimeout(function () {
+    playBootSound();
+    changeVisibility("boot", "visible");
+    changeVisibility("memory-info", "hidden");
 
-  //WIP: add the pc98 boot sound and fix the timings
+    setTimeout(function () {
+      changeVisibility("memory-info", "visible");
+      printMemory(messages);
 
-  document.getElementById("memory-info").style.visibility = "visible";
+      setTimeout(function () {
+        changeVisibility("memory-info", "hidden");
+        changeVisibility("boot-info", "visible");
+        changeBackgroundImage("boot", images[0]);
 
-  printMemory(messages);
-
-  setTimeout(() => (document.getElementById("memory-info").style.visibility = "hidden"), 2500);
-  setTimeout(() => (document.getElementById("boot-info").style.visibility = "visible"), 2500);
-
-  setTimeout(() => (screen.style.backgroundImage = "url(../assets/images/ui/pc98_dos.png)"), 2500);
-
-  setTimeout(() => (document.getElementById("boot-info").style.visibility = "hidden"), 4000);
-  setTimeout(() => (screen.style.visibility = "hidden"), 4000);
-  setTimeout(() => (screen.style.backgroundImage = "url('')"), 4000);
+        setTimeout(function () {
+          changeVisibility("boot-info", "hidden");
+          changeVisibility("boot", "hidden");
+          changeBackgroundImage("boot", images[1]);
+        }, 3000);
+      }, 2500);
+    }, 550);
+  }, 500);
 }
 
 function printMemory(messages) {
@@ -45,4 +51,16 @@ function printMemory(messages) {
 
 function changeText(str) {
   ram.innerHTML = str;
+}
+
+function changeVisibility(element, visibility) {
+  document.getElementById(element).style.visibility = visibility;
+}
+
+function changeBackgroundImage(element, location) {
+  document.getElementById(element).style.backgroundImage = "url(" + location + ")";
+}
+
+function playBootSound() {
+  new Audio("https://files.catbox.moe/1fg1vh.mp3").play();
 }
