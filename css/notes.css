@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "MGS2MENU";
+  src: url("../assets/fonts/MGS2MENU.ttf") format("truetype");
+  font-weight: normal;
+}
+
+html * {
+  font-family: "MGS2MENU", sans-serif;
+  font-weight: normal;
+  scrollbar-width: none; /* Remove scrollbars on Firefox */
+  color: #63806e;
+  font-size: 20px;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #040704;
+}
+
+#upper-box {
+  border-left: 2px solid #63806e;
+  margin-left: 5%;
+  height: 10%;
+}
+#middle-box {
+  border-bottom: 2px solid #63806e;
+  height: 80%;
+  border-right: 2px solid #63806e;
+  width: 100%;
+  display: flex;
+}
+
+#middle {
+  border-top: 2px solid #63806e;
+  border-right: 2px solid #63806e;
+
+  height: 100%;
+  width: 5%;
+}
+#middle2 {
+  border-top: 2px solid #63806e;
+  background-color: #373e38;
+  height: 99.6%;
+  width: 5%;
+}
+
+main {
+  border-left: 2px solid #63806e;
+  border-right: 2px solid #63806e;
+  border-top: 2px solid #63806e;
+  height: 100%;
+  width: 70%;
+}
+
+#lower-box {
+  border-right: 2px solid #63806e;
+  height: 10%;
+  width: 5%;
+}
