@@ -4,11 +4,16 @@
   font-weight: normal;
 }
 
+:root {
+  --green-primary: #63806e;
+  --green-secondary: #3b483d;
+}
+
 html * {
   font-family: "MGS2MENU", sans-serif;
   font-weight: normal;
-  scrollbar-width: none; /* Remove scrollbars on Firefox */
-  color: #63806e;
+  scrollbar-width: none;
+  color: var(--green-secondary);
   font-size: 20px;
 }
 
@@ -16,46 +21,79 @@ html,
 body {
   height: 100vh;
   margin: 0;
-  background-color: #040704;
+  background-color: black;
 }
 
-#upper-box {
-  border-left: 2px solid #63806e;
+#top-box {
+  border-left: 2px solid var(--green-primary);
   margin-left: 5%;
-  height: 10%;
+  height: 8.7%;
 }
+
 #middle-box {
-  border-bottom: 2px solid #63806e;
+  border-bottom: 2px solid var(--green-primary);
   height: 80%;
-  border-right: 2px solid #63806e;
   width: 100%;
   display: flex;
 }
 
-#middle {
-  border-top: 2px solid #63806e;
-  border-right: 2px solid #63806e;
-
+#middle-left {
+  border-top: 2px solid var(--green-primary);
+  border-right: 2px solid var(--green-primary);
   height: 100%;
   width: 5%;
 }
-#middle2 {
-  border-top: 2px solid #63806e;
-  background-color: #373e38;
-  height: 99.6%;
+
+#middle-right {
+  border-top: 2px solid var(--green-primary);
+  background-color: var(--green-secondary);
   width: 5%;
 }
 
 main {
-  border-left: 2px solid #63806e;
-  border-right: 2px solid #63806e;
-  border-top: 2px solid #63806e;
+  border-left: 2px solid var(--green-primary);
+  border-right: 2px solid var(--green-primary);
+  border-top: 2px solid var(--green-primary);
   height: 100%;
-  width: 70%;
+  width: 85%;
 }
 
-#lower-box {
-  border-right: 2px solid #63806e;
-  height: 10%;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  margin-top: 5px;
+  padding: 0 0px 0 10px;
+}
+
+li:before {
+  content: "▆";
+  opacity: 0;
+  margin: 0;
+  left: -2.6%;
+  position: relative;
+  bottom: 9px;
+}
+
+ul li:hover:before {
+  opacity: 1;
+  color: var(--green-primary);
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+}
+
+a:hover {
+  color: var(--green-primary);
+}
+
+#bottom-box {
+  border-right: 2px solid var(--green-primary);
+  height: 11%;
   width: 5%;
 }
