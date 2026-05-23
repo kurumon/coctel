@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "MGS2MENU";
+  src: url("/assets/fonts/MGS2MENU.ttf") format("truetype");
+  font-weight: normal;
+}
+
+:root {
+  --background: #6f7468;
+  --text: #929693;
+  --content-background: #343936;
+}
+
+html * {
+  font-family: "MGS2MENU", sans-serif;
+  font-weight: normal;
+  scrollbar-width: none;
+  color: var(--text);
+  font-size: 20px;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: row;
+}
+
+#left-box {
+  width: 3%;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  position: fixed;
+}
+
+#left-box span {
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  display: flex;
+  align-items: center;
+}
+
+#sprite {
+  font-size: 20px;
+  height: 60%;
+}
+
+#design {
+  font-size: 10px;
+  height: 35%;
+}
+
+#right-box {
+  margin-left: 6%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#title-container {
+  margin: 0 auto;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#title {
+  color: black;
+  font-size: 22px;
+}
+
+#content {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+#content-left {
+  margin-left: 4%;
+  height: 95%;
+  width: 90%;
+  border-left: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+#content-right {
+  width: 10%;
+  border-left: 4px solid black;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--content-background);
+  color: var(--text);
+  overflow-y: auto;
+}
+
+p {
+  padding: 1%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
