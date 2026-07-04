@@ -80,6 +80,8 @@ body {
   margin-left: 5px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #open-program {
@@ -109,4 +111,9 @@ body {
 li::marker,
 a {
   color: rgb(223, 106, 175);
+  text-decoration: none;
+}
+
+#date {
+  margin-right: 5px;
 }
